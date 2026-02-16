@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="id">
+
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
