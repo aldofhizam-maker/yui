@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Archive Store Room</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center center fixed;
+    background-size: cover;
+    color: #f5e6c8;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 4px;
+    font-size: 36px;
+    text-shadow: 0 0 15px #c2a86d;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+    font-style: italic;
+    color: #c2a86d;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(50, 40, 20, 0.85);
+    box-shadow: 0 0 25px black;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #c2a86d;
+}
+
+th {
+    background-color: #3b2f1d;
+    color: #ffd700;
+}
+
+tr:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+button {
+    padding: 8px 15px;
+    background: #8b6f3d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ffd700;
+    color: black;
+    box-shadow: 0 0 15px gold;
+    transform: scale(1.05);
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.button {
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px; /* kotak */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f);
+    background-size: 200% 100%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+    background-position: right center; /* animasi gradient geser */
+    transform: scale(1.05); /* membesar */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.button:active {
+    transform: scale(0.98); /* efek ditekan */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+    <h1>🗄 FILE-FILE</h1>
+    <p class="subtitle">Classified Historical file</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama file</th>
+                <th>Kategori</th>
+                <th>Akses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Perjanjian Lama 1800</td>
+                <td>Sejarah</td>
+                <td><button onclick="openFile('files/doc1.pdf')">Buka</button></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Peta Rahasia 1945</td>
+                <td>Arsip</td>
+                <td><button onclick="openFile('files/doc2.pdf')">Buka</button></td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Catatan Operasi Alpha</td>
+                <td>Secret</td>
+                <td><button onclick="openFile('files/doc3.pdf')">Buka</button></td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Dokumen Proyek X</td>
+                <td>Rahasia</td>
+                <td><button onclick="openFile('files/doc4.pdf')">Buka</button></td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Arsip Kolonial</td>
+                <td>Sejarah</td>
+                <td><button onclick="openFile('files/doc5.pdf')">Buka</button></td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>20 Ayat Al-Qur’an & Makna dalam Kehidupan<br> Sehari-hari, Politik, Ekonomi, dan hawa nafsu</td>
+                <td>Secret</td>
+                <td><button onclick="openFile('isl.html')">Buka</button></td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>10 Peperangan Tebesar Dalam Sejarah Islam</td>
+                <td>Sejarah</td>
+                <td><button onclick="openFile('is.html')">Buka</button></td>
+            </tr>
+            <tr>
+                <td>08</td>
+                <td>File biru</td>
+                <td>Data biru</td>
+                <td><button onclick="openFile('u.html')">Buka</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        © file biasa
+    </div>
+</div>
+
+<a class="button" role="button" href="login.html">Keluar</a>
+
+<script>
+function openFile(filePath) {
+    alert("🔐 Mengakses dokumen rahasia...");
+    window.open(filePath, '_blank');
+}
+</script>
+
+</body>
+</html>

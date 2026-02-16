@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Archive Academy</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Glass Container */
+.container {
+    width: 95%;
+    max-width: 1100px;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 40px rgba(0, 150, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #4fc3f7, #00e5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+thead {
+    background: rgba(0, 150, 255, 0.2);
+}
+
+th {
+    padding: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    padding: 18px;
+    text-align: center;
+    color: #eee;
+}
+
+tbody tr {
+    transition: 0.3s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tbody tr:hover {
+    background: rgba(0, 150, 255, 0.15);
+    transform: scale(1.01);
+}
+
+/* Logo Style */
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 20%;
+    padding: 12px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 0 25px rgba(0, 150, 255, 0.6);
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 200, 255, 1);
+}
+
+/* Button */
+button {
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.5);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 150, 255, 0.9);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+.button {
+    background: blueviolet;
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Blue Archive Academy Selection</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Logo</th>
+                <th>Sekolah</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <img class="logo" src="f.png">
+                </td>
+                <td>Abydos High School</td>
+                <td><button onclick="location.href='abydos.html'">Masuk</button></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>
+                    <img class="logo" src="https://static.wikia.nocookie.net/blue-archive/images/2/2f/Trinity_Logo.png">
+                </td>
+                <td>Trinity General School</td>
+                <td><button onclick="location.href='trinity.html'">Masuk</button></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>
+                    <img class="logo" src="i.jfif">
+                </td>
+                <td>Gehenna Academy</td>
+                <td><button onclick="location.href='gehenna.html'">Masuk</button></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>
+                    <img class="logo" src="https://static.wikia.nocookie.net/blue-archive/images/0/08/Millennium_Logo.png">
+                </td>
+                <td>Millennium Science School</td>
+                <td><button onclick="location.href='millennium.html'">Masuk</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <a role="button" class="button" href="perpus.html">Keluar</a>
+</div>
+
+</body>
+</html>
+
+

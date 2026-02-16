@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 Peperangan Terbesar Dalam Sejarah Islam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Background Gurun Pasir */
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=1600') no-repeat center center/cover;
+    z-index:-2;
+    animation: desertMove 60s infinite alternate ease-in-out;
+}
+
+@keyframes desertMove{
+    from{transform:scale(1);}
+    to{transform:scale(1.12);}
+}
+
+.overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:14px;
+    opacity:0.9;
+}
+
+.container{
+    width:95%;
+    max-width:900px;
+    margin:auto;
+    padding-bottom:60px;
+}
+
+.card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    margin:25px 0;
+    padding:20px;
+    border-radius:15px;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:rgba(255,255,255,0.2);
+}
+
+.card h2{
+    text-align:center;
+    font-size:18px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.sejarah{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.7s ease, opacity 0.7s ease;
+    opacity:0;
+    margin-top:15px;
+    text-align:justify;
+    font-size:14px;
+    line-height:1.7;
+}
+
+.card.active .sejarah{
+    max-height:1200px;
+    opacity:1;
+}
+
+@media(max-width:600px){
+    header h1{font-size:20px;}
+    .card h2{font-size:16px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+<header>
+<h1>10 Peperangan Terbesar Dalam Sejarah Islam</h1>
+<p>Klik kartu untuk melihat penjelasan lengkap</p>
+</header>
+
+<div class="container">
+
+<!-- 1 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>1. Perang Badar (624 M)</h2>
+<img src="Badar.png">
+<div class="sejarah">
+<p>Perang Badar terjadi pada 17 Ramadhan tahun 2 Hijriyah antara kaum Muslimin dan kaum Quraisy Mekkah. Pasukan Muslim berjumlah sekitar 313 orang, sedangkan pasukan Quraisy sekitar 1000 orang dengan perlengkapan jauh lebih lengkap.</p>
+<p>Dengan strategi penguasaan sumber air dan kedisiplinan pasukan, kaum Muslimin berhasil meraih kemenangan besar. Peristiwa ini memperkuat kedudukan umat Islam di Madinah dan menjadi tonggak penting dalam sejarah perjuangan Islam.</p>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>2. Perang Uhud (625 M)</h2>
+<img src="Uhud.png">
+<div class="sejarah">
+<p>Perang Uhud terjadi setahun setelah Perang Badar sebagai balasan kaum Quraisy. Pasukan Quraisy berjumlah sekitar 3000 orang, sementara kaum Muslim sekitar 700 orang.</p>
+<p>Pada awalnya kaum Muslim unggul, namun karena sebagian pemanah meninggalkan posisi, pasukan Quraisy berhasil menyerang balik. Peristiwa ini menjadi pelajaran penting tentang ketaatan dan disiplin.</p>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>3. Perang Khandaq/Ahzab (627 M)</h2>
+<img src="ahzab_war.jpg">
+<div class="sejarah">
+<p>Perang Khandaq atau Ahzab terjadi ketika koalisi besar Quraisy menyerang Madinah. Atas usulan Salman Al-Farisi, kaum Muslim menggali parit sebagai pertahanan.</p>
+<p>Strategi ini membuat musuh tidak dapat menembus kota. Akhirnya pasukan koalisi mundur karena cuaca buruk dan perpecahan internal.</p>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>4. Perang Mu'tah (629 M)</h2>
+<img src="mutah.jpg">
+<div class="sejarah">
+<p>Perang Mu'tah terjadi antara 3000 pasukan Muslim melawan tentara Bizantium yang jauh lebih besar. Pertempuran ini terjadi di wilayah Syam.</p>
+<p>Beberapa panglima Muslim gugur, namun strategi Khalid bin Walid memungkinkan pasukan Muslim mundur dengan terhormat dan tetap menjaga kekuatan.</p>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>5. Fathu Makkah (630 M)</h2>
+<img src="fathul.webp">
+<div class="sejarah">
+<p>Fathu Makkah adalah penaklukan kota Makkah oleh kaum Muslim dengan sekitar 10.000 pasukan. Peristiwa ini berlangsung hampir tanpa pertempuran besar.</p>
+<p>Nabi Muhammad SAW memberikan pengampunan umum kepada penduduk Makkah. Peristiwa ini menandai bersatunya Jazirah Arab di bawah Islam.</p>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>6. Perang Hunain (630 M)</h2>
+<img src="Hunain.jpg">
+<div class="sejarah">
+<p>Perang Hunain terjadi melawan suku Hawazin dan Tsaqif setelah Fathu Makkah. Pasukan Muslim sempat terdesak karena serangan mendadak.</p>
+<p>Namun dengan keteguhan dan kepemimpinan Nabi, kaum Muslim bangkit dan memenangkan pertempuran tersebut.</p>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>7. Perang Yarmuk (636 M)</h2>
+<img src="yarmuk.jpg">
+<div class="sejarah">
+<p>Perang Yarmuk terjadi antara pasukan Muslim dan Bizantium di wilayah Syam. Dipimpin oleh Khalid bin Walid.</p>
+<p>Kemenangan ini membuka jalan bagi penyebaran Islam di Suriah dan melemahkan kekuasaan Bizantium.</p>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>8. Perang Qadisiyah (636 M)</h2>
+<img src="muslim.webp">
+<div class="sejarah">
+<p>Pertempuran besar antara pasukan Muslim dan Kekaisaran Persia Sassaniyah. Pertempuran berlangsung sengit beberapa hari.</p>
+<p>Kemenangan ini menyebabkan runtuhnya kekuasaan Persia di Irak dan memperluas wilayah Islam.</p>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>9. Perang Hittin (1187 M)</h2>
+<img src="hittin.jpg">
+<div class="sejarah">
+<p>Perang Hittin dipimpin oleh Salahuddin Al-Ayyubi melawan Tentara Salib. Pertempuran terjadi di dekat Danau Tiberias.</p>
+<p>Kemenangan ini membuka jalan bagi pembebasan Yerusalem dan menjadi titik penting dalam sejarah Perang Salib.</p>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="card" onclick="toggleCard(this)">
+<h2>10. Penaklukan Konstantinopel (1453 M)</h2>
+<img src="Konstantinopel.jpg">
+<div class="sejarah">
+<p>Penaklukan Konstantinopel dipimpin oleh Sultan Mehmed II dari Kesultanan Utsmaniyah. Kota ini memiliki pertahanan yang sangat kuat.</p>
+<p>Dengan strategi pengepungan dan penggunaan meriam besar, Konstantinopel berhasil ditaklukkan dan mengakhiri Kekaisaran Bizantium.</p>
+</div>
+</div>
+<button><a href="perpus.html">Keluar</a></button>
+</div>
+
+
+<script>
+function toggleCard(card){
+    card.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

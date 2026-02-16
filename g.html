@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f3f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Selamat Datang 🎉</h2>
+    <p id="user"></p>
+    <button onclick="lanjut()">Lanjut Ke Halaman Berikutnya</button>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+    // cek login
+    if (localStorage.getItem("login") !== "true") {
+        window.location.href = "login.html";
+    }
+
+    document.getElementById("user").textContent =
+        "Halo, " + localStorage.getItem("user");
+
+    function logout() {
+        localStorage.clear();
+        window.location.href = "login.html";
+    }
+</script>
+
+<script>
+    if (localStorage.getItem("login") !== "true") {
+        window.location.href = "perpus.html";
+    }
+
+    document.getElementById("user").textContent =
+        "Halo, " + localStorage.getItem("user");
+
+    function lanjut() {
+        localStorage.clear();
+        window.location.href = "perpus.html";
+    }
+</script>
+
+</body>
+</html>
